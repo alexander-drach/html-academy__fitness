@@ -1,0 +1,51 @@
+.header {
+  padding-top: 40px;
+  // outline: 1px solid lightgreen;
+
+  @include vp-767 {
+    padding-top: 21px;
+  }
+}
+
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header__link-wrapper {
+  margin-top: -11px;
+
+  @include vp-1199 {
+    margin-top: -6px;
+  }
+
+  @include vp-767 {
+    margin-top: -5px;
+  }
+}
+
+.header__phone {
+  position: relative;
+  z-index: 2;
+
+  font-family: $ff-alumisans;
+  color: $color-default-white;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  margin-left: 20px;
+
+  @include vp-1199 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+}

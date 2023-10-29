@@ -1,14 +1,19 @@
 .btn {
   display: inline-flex;
+  justify-content: center;
   padding: 10px 20px;
 
   color: $color-default-white;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 
   background-color: $color-neon-blue;
   border: none;
   cursor: pointer;
 
-  transition: opacity $trans-default;
+  transition: all $trans-default;
 
   &--red {
     background-color: $color-torch-red;
@@ -21,6 +26,5 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
   }
 }
