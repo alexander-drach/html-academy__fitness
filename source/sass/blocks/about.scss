@@ -105,6 +105,7 @@
   }
 
   @include vp-767 {
+    max-width: none;
     margin-bottom: 33px;
   }
 }
@@ -150,8 +151,8 @@
 
 .about__img img {
   @include vp-1199 {
-    width: auto;
-    height: auto;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -174,10 +175,16 @@
     left: 0;
     transform: none;
 
+    height: 400px;
+
     width: calc(100% + 30px);
 
     margin-left: -15px;
     margin-right: -15px;
+  }
+
+  @include vp-374 {
+    height: 167px;
   }
 }
 

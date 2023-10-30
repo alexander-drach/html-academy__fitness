@@ -1142,6 +1142,7 @@ button,
 }
 @media (max-width: 767px) {
   .about__desc {
+    max-width: none;
     margin-bottom: 33px;
   }
 }
@@ -1188,8 +1189,9 @@ button,
 
 @media (max-width: 1199px) {
   .about__img img {
-    width: auto;
-    height: auto;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -1217,9 +1219,15 @@ button,
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+    height: 400px;
     width: calc(100% + 30px);
     margin-left: -15px;
     margin-right: -15px;
+  }
+}
+@media (max-width: 374px) {
+  .about__video {
+    height: 167px;
   }
 }
 
