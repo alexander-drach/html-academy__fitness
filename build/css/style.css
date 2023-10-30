@@ -590,6 +590,7 @@ button,
   opacity: 0.5;
   pointer-events: none;
 }
+
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -815,9 +816,9 @@ button,
 .logo--header {
   margin-right: 20px;
 }
+
 .intro {
   color: #ffffff;
-  background-color: #b80027;
   background: conic-gradient(from 130.31deg at calc(50% - 460px) 257px, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   padding-bottom: 42px;
 }
@@ -942,6 +943,7 @@ button,
     font-size: 72px;
     letter-spacing: 3.6px;
     text-transform: none;
+    -webkit-text-stroke-width: 4px;
     padding-top: 1px;
     margin-bottom: 0;
   }
@@ -1065,6 +1067,7 @@ button,
     padding-left: 0;
   }
 }
+
 .about__text {
   width: calc(35% - 22px);
   padding-top: 39px;
