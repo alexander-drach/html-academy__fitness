@@ -24,13 +24,19 @@
   width: 43.1%;
   background: #ED0233;
 
-  padding: 85px 80px 87px 80px;
+  padding: 85px 77px 86px 77px;
 
   @include vp-1199 {}
 
   @include vp-767 {
     width: 100%;
   }
+}
+
+.poster__grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  margin-bottom: 19px;
 }
 
 .poster h2 {
@@ -40,6 +46,10 @@
   font-weight: 600;
   line-height: 96%;
   letter-spacing: 2.46px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 0;
 }
 
 .poster h3 {
@@ -48,20 +58,31 @@
   font-weight: 400;
   line-height: 150%;
 
-  padding-bottom: 13px;
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
+}
 
-  border-bottom: 1px solid $color-default-white;
+.poster__date {
+  margin-top: -6px;
+  margin-left: 51px;
+}
+
+.poster__item-date {
+  &:first-child {
+    margin-bottom: 18px;
+  }
 }
 
 .poster time {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 100%;
+
+  padding-top: 4px;
+  border-top: 1px solid $color-default-white;
 }
 
 .poster__month,
@@ -78,12 +99,25 @@
   margin-bottom: -2px;
 }
 
+.poster__desc {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  margin-bottom: 46px;
+}
+
+.poster__desc p {
+  margin: 0;
+}
+
 .poster__btn {
   width: 100%;
 
   border: 4px solid $color-default-white;
-  padding-top: 29px;
-  padding-bottom: 29px;
+  padding-top: 20px;
+  padding-bottom: 19px;
 }
 
 .poster__img {
@@ -97,8 +131,11 @@
 }
 
 .poster__img img {
+  height: 100%;
+
   @include vp-1199 {
-    width: 100%;
+    width: auto;
+    // width: 100%;
     object-fit: cover;
   }
 }
