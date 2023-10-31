@@ -25,6 +25,7 @@
 
 <body>
   <div class="wrapper">
+
     <section class="section intro">
       <div class="container">
         <header class="header">
@@ -56,7 +57,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </section><!-- intro -->
+
     <main>
       <section class="section about">
         <div class="container">
@@ -89,12 +91,13 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="section abonements">
+      </section><!-- about -->
+
+      <section id="abonements" class="section abonements">
         <div class="container">
           <div class="abonements__inner">
             <h2>Абонементы</h2>
-            <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
+            <div class="tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
               <div class="tabs__controls" data-tabs="controls">
                 <button class="tabs__control" type="button" data-tabs="control">1 месяц</button>
                 <button class="tabs__control" type="button" data-tabs="control">6 месяцев</button>
@@ -149,18 +152,157 @@
                       <a class="btn abonements__btn" href="#">купить абонемент</a>
                     </li>
                   </ul>
-                </div>
+                </div><!-- content-1 -->
                 <div class="tabs__element" data-tabs="element">
-                  контент-2
-                </div>
+                  <ul class="abonements__list">
+
+                    <li class="abonements__item">
+                      <h3>С тренером</h3>
+                      <div class="abonements__desc">
+                        <p>12 занятий</p>
+                      </div>
+                      <div class="abonements__price">
+                        <span class="abonements__price-bg">25000</span>
+                        <p>25000&nbsp;</p>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#icon-currency"></use>
+                        </svg>
+                      </div>
+                      <a class="btn abonements__btn" href="#">купить абонемент</a>
+                    </li>
+
+                    <li class="abonements__item">
+                      <h3>Дневной</h3>
+                      <div class="abonements__desc">
+                        <p>с 8:00 до 17:00</p>
+                      </div>
+                      <div class="abonements__price">
+                        <span class="abonements__price-bg">8500</span>
+                        <p>8500&nbsp;</p>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#icon-currency"></use>
+                        </svg>
+                      </div>
+                      <a class="btn abonements__btn" href="#">купить абонемент</a>
+                    </li>
+
+                    <li class="abonements__item">
+                      <h3>Полный день</h3>
+                      <div class="abonements__desc">
+                        <p>с 8:00 до 22:00</p>
+                      </div>
+                      <div class="abonements__price">
+                        <span class="abonements__price-bg">13500</span>
+                        <p>13500&nbsp;</p>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#icon-currency"></use>
+                        </svg>
+                      </div>
+                      <a class="btn abonements__btn" href="#">купить абонемент</a>
+                    </li>
+                  </ul>
+                </div><!-- content-2 -->
                 <div class="tabs__element" data-tabs="element">
-                  контент-2
-                </div>
+                  <ul class="abonements__list">
+
+                    <li class="abonements__item">
+                      <h3>С тренером</h3>
+                      <div class="abonements__desc">
+                        <p>12 занятий</p>
+                      </div>
+                      <div class="abonements__price">
+                        <span class="abonements__price-bg">50000</span>
+                        <p>50000&nbsp;</p>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#icon-currency"></use>
+                        </svg>
+                      </div>
+                      <a class="btn abonements__btn" href="#">купить абонемент</a>
+                    </li>
+
+                    <li class="abonements__item">
+                      <h3>Дневной</h3>
+                      <div class="abonements__desc">
+                        <p>с 8:00 до 17:00</p>
+                      </div>
+                      <div class="abonements__price">
+                        <span class="abonements__price-bg">17000</span>
+                        <p>17000&nbsp;</p>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#icon-currency"></use>
+                        </svg>
+                      </div>
+                      <a class="btn abonements__btn" href="#">купить абонемент</a>
+                    </li>
+
+                    <li class="abonements__item">
+                      <h3>Полный день</h3>
+                      <div class="abonements__desc">
+                        <p>с 8:00 до 22:00</p>
+                      </div>
+                      <div class="abonements__price">
+                        <span class="abonements__price-bg">27000</span>
+                        <p>27000&nbsp;</p>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#icon-currency"></use>
+                        </svg>
+                      </div>
+                      <a class="btn abonements__btn" href="#">купить абонемент</a>
+                    </li>
+                  </ul>
+                </div><!-- content-3 -->
               </div>
             </div>
           </div><!-- abonements__inner -->
         </div><!-- container -->
-      </section>
+      </section><!-- abonements -->
+
+      <section class="section poster">
+        <div class="container">
+          <div class="poster__inner">
+            <div class="poster__content">
+              <h2>Super Games</h2>
+              <div class="poster__date">
+                <div class="poster__item-date">
+                  <h3>Дата</h3>
+                  <time datetime="2019-03-7 12:00">
+                    <div class="poster__day">
+                      <span>7</span>
+                    </div>
+                    <div>
+                      <div class="poster__month">
+                        <span>Марта</span>
+                      </div>
+                      <div class="poster__year">
+                        <span>2019</span>
+                      </div>
+                    </div>
+                  </time>
+                </div><!-- poster__item-date -->
+                <div class="poster__item-date">
+                  <h3>Время</h3>
+                  <time>12:00</time>
+                </div>
+              </div><!--poster__date -->
+              <div class="poster__desc">
+                <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+              </div>
+              <a class="btn poster__btn" href="#">Заполнить заявку</a>
+            </div>
+            <div class="poster__img">
+              <picture>
+                <source type="image/webp" srcset="img/poster-mobile.webp 1x, img/poster-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/poster-tablet.webp 1x, img/poster-tablet@2x.webp 2x" media="(max-width: 1199px)">
+
+                <source type="image/png" srcset="img/poster-mobile.png 1x, img/poster-mobile@2x.png 2x" media="(max-width: 767px)">
+                <source type="image/png" srcset="img/poster-tablet.png 1x, img/poster-tablet@2x.png 2x" media="(max-width: 1199px)">
+
+                <img width="660" height="500" src="img/poster-desktop.png" srcset="img/poster-desktop@2x.png" alt="постер соревнований по Crossfit">
+              </picture>
+            </div>
+          </div><!-- poster__inner -->
+        </div><!-- container -->
+      </section><!-- poster -->
     </main>
     <footer class="footer">
       <div class="container"></div>

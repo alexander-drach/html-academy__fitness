@@ -23,6 +23,18 @@
     height: 2px;
     background-color: rgba(120, 120, 120, 0.2);
   }
+
+  @include vp-1199 {
+    gap: 0 54px;
+
+    margin-bottom: 44px;
+  }
+
+  @include vp-767 {
+    gap: 0 46px;
+
+    margin-bottom: 34px;
+  }
 }
 
 .tabs__control {
@@ -48,6 +60,15 @@
     display: block;
     width: 100%;
     height: 2px;
+  }
+
+  @include vp-1199 {
+    font-size: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    padding: 0 0 15px 0;
   }
 }
 
