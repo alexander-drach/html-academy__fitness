@@ -178,20 +178,164 @@
     left: 0;
     transform: none;
 
-    height: 400px;
+    height: auto;
 
     width: calc(100% + 30px);
 
     margin-left: -15px;
     margin-right: -15px;
   }
+}
 
-  @include vp-374 {
-    height: 167px;
+.about__video img {
+  @include vp-1199 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
-.about__video iframe {
+.about__video::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  display: block;
   width: 100%;
   height: 100%;
+  background-color: rgba(20, 54, 122, 0.5);
+}
+
+.about__video iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.about__btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: transparent;
+  z-index: 3;
+  padding: 0;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  fill: #ffffff;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    width: 70px;
+    height: 70px;
+    padding: 2px;
+
+    background-image: linear-gradient(81deg, #003d85 0%, #b80027 89%);
+  }
+
+  &::after {
+    width: 100px;
+    height: 100px;
+    padding: 2px;
+
+    background-image: -webkit-gradient(
+      linear,
+      right bottom,
+      left top,
+      from(rgba(237, 2, 53, 0.2)),
+      to(rgba(0, 61, 183, 0.2))
+    );
+    background-image: linear-gradient(
+      to left top,
+      rgba(237, 2, 53, 0.2),
+      rgba(0, 61, 183, 0.2)
+    );
+    -webkit-mask: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0, #fff)
+        )
+        content-box,
+      -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff))
+        content-box,
+      -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #102654;
+
+    &::before {
+      background-color: #ffffff;
+      background-image: none;
+    }
+
+    &::after {
+      background-color: #102654;
+      background-image: none;
+    }
+  }
+
+  &:active {
+    fill: #102654;
+
+    &::before {
+      width: 58px;
+      height: 58px;
+
+      background-color: #ffffff;
+      background-image: none;
+    }
+
+    &::after {
+      background-color: #102654;
+      background-image: none;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.4;
+
+    fill: #102654;
+
+    &::before {
+      background-color: #ffffff;
+      background-image: none;
+    }
+
+    &::after {
+      background-color: #102654;
+      background-image: none;
+    }
+  }
 }

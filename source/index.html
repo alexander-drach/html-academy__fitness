@@ -86,6 +86,27 @@
                 </picture>
               </div>
               <div class="about__video">
+                <picture>
+                  <source type="image/webp" srcset="img/poster-video-mobile.webp 1x, img/poster-video-mobile@2x.webp 2x" media="(max-width: 767px)">
+                  <source type="image/webp" srcset="img/poster-video-tablet.webp 1x, img/poster-video-tablet@2x.webp 2x" media="(max-width: 1199px)">
+
+                  <source type="image/png" srcset="img/poster-video-mobile.png 1x, img/poster-video-mobile@2x.png 2x" media="(max-width: 767px)">
+                  <source type="image/png" srcset="img/poster-video-tablet.png 1x, img/poster-video-tablet@2x.png 2x" media="(max-width: 1199px)">
+
+                  <img width="364" height="228" src="img/poster-video-desktop.png" srcset="img/poster-video-desktop@2x.png" alt="фото тренажерного зала">
+                </picture>
+                <!-- <button class="about__btn" type="button" aria-label="play">
+                  <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z"></path>
+                  </svg>
+                </button> -->
+                <a class="about__btn" href="https://www.youtube.com/embed/9TZXsZItgdw">
+                  <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z"></path>
+                  </svg>
+              
+                  <span class="visually-hidden">Показать видео ролик</span>
+                </a>
                 <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?si=3FFonp_moucmMN_0" title="Должно быть видео про тренажерный зал, но здесь видео про Html academy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
