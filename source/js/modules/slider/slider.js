@@ -5,11 +5,6 @@ const slider = () => {
     direction: 'horizontal',
     loop: true,
 
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -30,11 +25,6 @@ const slider = () => {
   const swiperReviews = new Swiper('.reviews__slider', {
     direction: 'horizontal',
     loop: true,
-
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
 
     navigation: {
       nextEl: '.swiper-button-next',
