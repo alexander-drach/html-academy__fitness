@@ -18,8 +18,6 @@ const playVideo = () => {
     });
     evt.stopPropagation();
   });
-
-
 };
 
-export { playVideo };
+export {playVideo};

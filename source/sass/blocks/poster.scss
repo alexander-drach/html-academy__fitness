@@ -4,7 +4,9 @@
 
   color: $color-default-white;
 
-  @include vp-1199 {}
+  @include vp-1199 {
+    padding-top: 101px;
+  }
 
   @include vp-767 {
     padding-top: 70px;
@@ -14,10 +16,6 @@
 .poster__inner {
   display: flex;
   flex-wrap: wrap;
-
-  @include vp-1199 {}
-
-  @include vp-767 {}
 }
 
 .poster__content {
@@ -26,10 +24,13 @@
 
   padding: 85px 77px 86px 77px;
 
-  @include vp-1199 {}
+  @include vp-1199 {
+    padding: 47px 45px 86px 45px;
+  }
 
   @include vp-767 {
     width: 100%;
+    padding: 85px 77px 86px 77px;
   }
 }
 
@@ -37,6 +38,12 @@
   display: grid;
   grid-template-columns: 200px 1fr;
   margin-bottom: 19px;
+
+  @include vp-1199 {
+    grid-template-columns: 117px 1fr
+  }
+
+  @include vp-767 {}
 }
 
 .poster h2 {
@@ -50,6 +57,11 @@
   text-transform: uppercase;
 
   margin-bottom: 0;
+
+  @include vp-1199 {
+    font-size: 48px;
+    letter-spacing: 1.44px;
+  }
 }
 
 .poster h3 {
@@ -60,16 +72,38 @@
 
   margin-top: 0;
   margin-bottom: 5px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 100%;
+
+    margin-bottom: 1px;
+  }
+
+  @include vp-767 {}
 }
 
 .poster__date {
   margin-top: -6px;
   margin-left: 51px;
+
+  @include vp-1199 {
+    margin-top: 0;
+    margin-left: 29px;
+  }
+
+  @include vp-767 {}
 }
 
 .poster__item-date {
   &:first-child {
     margin-bottom: 18px;
+
+    @include vp-1199 {
+      margin-bottom: 0;
+    }
+
+    @include vp-767 {}
   }
 }
 
@@ -83,6 +117,17 @@
 
   padding-top: 4px;
   border-top: 1px solid $color-default-white;
+
+  @include vp-1199 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+    padding-top: 0;
+  }
+
+  @include vp-767 {}
 }
 
 .poster__month,
@@ -93,10 +138,23 @@
   line-height: 150%;
 
   margin-left: 7px;
+
+  @include vp-1199 {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  @include vp-767 {}
 }
 
 .poster__month {
   margin-bottom: -2px;
+
+  @include vp-1199 {}
+
+  @include vp-767 {}
 }
 
 .poster__desc {
@@ -106,6 +164,15 @@
   line-height: 150%;
 
   margin-bottom: 46px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  @include vp-767 {}
 }
 
 .poster__desc p {
@@ -118,6 +185,10 @@
   border: 4px solid $color-default-white;
   padding-top: 20px;
   padding-bottom: 19px;
+
+  @include vp-1199 {}
+
+  @include vp-767 {}
 }
 
 .poster__img {
@@ -134,8 +205,8 @@
   height: 100%;
 
   @include vp-1199 {
-    width: auto;
-    // width: 100%;
+    width: 100%;
+    height: auto;
     object-fit: cover;
   }
 }

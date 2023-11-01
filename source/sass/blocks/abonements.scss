@@ -70,10 +70,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  margin: 0;
-  padding-left: 0;
-
-  list-style-type: none;
+  
 
   @include vp-1199 {
     grid-template-columns: repeat(1, 1fr);
