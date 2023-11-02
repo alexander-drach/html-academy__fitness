@@ -2866,6 +2866,7 @@ button,
 .trainers h3 {
   margin-top: 0;
   margin-bottom: 4px;
+  text-align: center;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -2916,9 +2917,27 @@ button,
   position: relative;
 }
 
+.trainers__preview h3 {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  padding: 0 15px;
+  margin: 0;
+}
+
 .trainers__detail {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0;
   background-color: rgba(16, 38, 84, 0.89);
   padding: 58px 40px 57px 57px;
+}
+
+.trainers__item:hover .trainers__detail {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
 }
 
 .promo {
