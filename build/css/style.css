@@ -3249,6 +3249,83 @@ button,
   line-height: 140%;
 }
 
+.footer {
+  padding-top: 41px;
+  padding-bottom: 42px;
+  background-color: #030A1A;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  max-width: 140px;
+}
+
+.social__item {
+  width: 25px;
+  height: 25px;
+  margin-right: 11px;
+  border-radius: 50%;
+}
+@media (max-width: 1023px) {
+  .social__item {
+    margin-right: 22px;
+  }
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__item:hover {
+  outline: 2px solid #ffffff;
+}
+
+.main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-menu__item {
+  margin-right: 40px;
+}
+.main-menu__item:last-child {
+  margin-right: 0;
+}
+
+.main-menu__link {
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

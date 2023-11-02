@@ -1,0 +1,20 @@
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-menu__link {
+  color: $color-default-white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

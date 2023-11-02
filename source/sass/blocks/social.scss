@@ -1,0 +1,29 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-shrink: 0;
+
+  max-width: 140px;
+
+}
+
+.social__item {
+  width: 25px;
+  height: 25px;
+  margin-right: 11px;
+
+  border-radius: 50%;
+
+  @include vp-1023 {
+    margin-right: 22px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__item:hover {
+  outline: 2px solid $color-default-white;
+}
