@@ -56,6 +56,8 @@
           <div class="intro__img">
             <picture>
               <source type="image/webp" srcset="img/intro-tablet.webp 1x, img/intro-tablet@2x.webp 2x" media="(max-width: 1199px)">
+              <source type="image/webp" srcset="img/intro-desktop.webp 1x, img/intro-desktop@2x.webp 2x">
+
               <source type="image/png" srcset="img/intro-tablet.png 1x, img/intro-tablet@2x.png 2x" media="(max-width: 1199px)">
               <img width="500" height="556" src="img/intro-desktop.png" srcset="img/intro-desktop@2x.png" alt="спортсмен в фирменой футболке SuperGym">
             </picture>
@@ -83,6 +85,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/about-mobile.webp 1x, img/about-mobile@2x.webp 2x" media="(max-width: 767px)">
                   <source type="image/webp" srcset="img/about-tablet.webp 1x, img/about-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                  <source type="image/webp" srcset="img/about-desktop.webp 1x, img/about-desktop@2x.webp 2x">
 
                   <source type="image/png" srcset="img/about-mobile.png 1x, img/about-mobile@2x.png 2x" media="(max-width: 767px)">
                   <source type="image/png" srcset="img/about-tablet.png 1x, img/about-tablet@2x.png 2x" media="(max-width: 1199px)">
@@ -94,11 +97,12 @@
                 <picture>
                   <source type="image/webp" srcset="img/poster-video-mobile.webp 1x, img/poster-video-mobile@2x.webp 2x" media="(max-width: 767px)">
                   <source type="image/webp" srcset="img/poster-video-tablet.webp 1x, img/poster-video-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                  <source type="image/webp" srcset="img/poster-video-desktop.webp 1x, img/poster-video-desktop@2x.webp 2x">
 
                   <source type="image/png" srcset="img/poster-video-mobile.png 1x, img/poster-video-mobile@2x.png 2x" media="(max-width: 767px)">
                   <source type="image/png" srcset="img/poster-video-tablet.png 1x, img/poster-video-tablet@2x.png 2x" media="(max-width: 1199px)">
 
-                  <img width="364" height="228" src="img/poster-video-desktop.png" srcset="img/poster-video-desktop@2x.png" alt="фото тренажерного зала">
+                  <img width="364" height="228" src="img/poster-video-desktop.png" srcset="img/poster-video-desktop@2x.png" alt="фото тренажерного зала обложка видео">
                 </picture>
                 <a class="about__btn" href="https://www.youtube.com/embed/9TZXsZItgdw">
                   <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -314,6 +318,7 @@
               <picture>
                 <source type="image/webp" srcset="img/poster-mobile.webp 1x, img/poster-mobile@2x.webp 2x" media="(max-width: 767px)">
                 <source type="image/webp" srcset="img/poster-tablet.webp 1x, img/poster-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                <source type="image/webp" srcset="img/poster-desktop.webp 1x, img/poster-desktop@2x.webp 2x">
 
                 <source type="image/png" srcset="img/poster-mobile.png 1x, img/poster-mobile@2x.png 2x" media="(max-width: 767px)">
                 <source type="image/png" srcset="img/poster-tablet.png 1x, img/poster-tablet@2x.png 2x" media="(max-width: 1199px)">
@@ -391,7 +396,48 @@
         <div class="container">
           <div class="promo__inner">
             <h2>Акции</h2>
-            акции
+            <ul class="list promo__list">
+              <li class="promo__item promo__item--main">
+                <div class="promo__text">
+                  <div class="promo__title promo__title--main">
+                    <h3>Год<span>4999</span></h3>
+                  </div>
+                  <div class="promo__desc">
+                    <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                  </div>
+                  <a class="btn promo__btn" href="#">Подробнее</a>
+                </div>
+                <div class="promo__img">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo-mobile.webp 1x, img/promo-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/promo-tablet.webp 1x, img/promo-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                    <source type="image/webp" srcset="img/promo-destop.webp 1x, img/promo-destop@2x.webp 2x">
+
+                    <source type="image/png" srcset="img/promo-mobile.png 1x, img/promo-mobile@2x.png 2x" media="(max-width: 767px)">
+                    <source type="image/png" srcset="img/promo-tablet.png 1x, img/promo-tablet@2x.png 2x" media="(max-width: 1199px)">
+
+                    <img width="280" height="462" src="img/promo-destop.png" srcset="img/promo-destop@2x.png" alt="постер главной акции - девушка в спортивной одежде">
+                  </picture>
+                </div>
+              </li><!-- promo__block -->
+
+              <li class="promo__item">
+                <h3>Месяц бесплатно</h3>
+                <div class="promo__desc">
+                  <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+                </div>
+                <a class="btn promo__btn" href="#">Подробнее</a>
+              </li><!-- promo__item -->
+
+              <li class="promo__item">
+                <h3>Скидка 20%</h3>
+                <div class="promo__desc">
+                  <p>Корпоративный фитнес с&nbsp;командой</p>
+                </div>
+                <a class="btn promo__btn" href="#">Подробнее</a>
+              </li><!-- promo__item -->
+
+            </ul>
           </div><!-- promo__inner -->
         </div><!-- container -->
       </section><!-- promo -->

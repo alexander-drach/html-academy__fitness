@@ -1,0 +1,148 @@
+.promo {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.promo h2 {
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.promo h3 {
+  margin-top: 0;
+}
+
+.promo__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: $color-blue;
+
+  padding: 19px 30px 27px 30px;
+
+  border: 7px solid $color-red;
+  border-image: linear-gradient(to left top, #00359f, #d10a42);
+  border-image-slice: 1;
+}
+
+.promo__item h3 {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+
+  margin-bottom: 3px;
+}
+
+.promo__desc {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.promo__btn {
+  display: inline-block;
+  color: $color-blue;
+  line-height: 100%;
+
+  padding: 0;
+  margin-top: auto;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $color-blue;
+
+    margin-top: 2px;
+  }
+}
+
+.promo__item--main {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  grid-row-start: span 2;
+
+  padding: 0;
+
+  border: none;
+}
+
+.promo__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+
+  color: $color-default-white;
+
+  padding: 43px 44px 44px 47px;
+  background-color: $color-red;
+}
+
+.promo__title--main {
+  margin-bottom: 18px;
+}
+
+.promo__title--main h3 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+
+  margin-bottom: 0;
+}
+
+.promo__title--main span {
+  display: block;
+
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+
+  margin-top: 3px;
+}
+
+.promo__item--main .promo__desc {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.promo__item--main .promo__btn {
+  color: $color-default-white;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+
+  &::after {
+    background-color: $color-default-white;
+  }
+}
+
+.promo__img {
+  width: 50%;
+}
+
+.promo__desc p {
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
