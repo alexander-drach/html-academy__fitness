@@ -78,6 +78,11 @@
   position: relative;
 }
 
+.trainers__preview img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .trainers__preview h3 {
   width: 100%;
   position: absolute;

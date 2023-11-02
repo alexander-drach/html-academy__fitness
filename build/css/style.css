@@ -2917,6 +2917,12 @@ button,
   position: relative;
 }
 
+.trainers__preview img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .trainers__preview h3 {
   width: 100%;
   position: absolute;
