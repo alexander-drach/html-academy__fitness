@@ -6,8 +6,8 @@ const slider = () => {
     loop: true,
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.trainers__slider-button-next',
+      prevEl: '.trainers__slider-button-prev',
     },
 
     breakpoints: {
@@ -31,8 +31,8 @@ const slider = () => {
     direction: 'horizontal',
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.reviews__slider-button-next',
+      prevEl: '.reviews__slider-button-prev',
     },
   });
 

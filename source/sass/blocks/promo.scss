@@ -16,9 +16,16 @@
 
 .promo__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+
+  @include vp-1199 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .promo__item {
@@ -32,6 +39,14 @@
   border: 7px solid $color-red;
   border-image: linear-gradient(to left top, #00359f, #d10a42);
   border-image-slice: 1;
+
+  @include vp-1199 {
+    grid-row-start: span 1;
+  }
+
+  @include vp-767 {
+    grid-row-start: span 2;
+  }
 }
 
 .promo__item h3 {
@@ -71,22 +86,32 @@
 }
 
 .promo__item--main {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row: span 2;
   align-items: stretch;
-
-  grid-row-start: span 2;
 
   padding: 0;
 
   border: none;
+
+  @include vp-1199 {
+    grid-template-columns: 41% 59%;
+    grid-row: span 1;
+    grid-column: 1/-1;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .promo__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50%;
+
+  width: 100%;
 
   color: $color-default-white;
 
@@ -105,6 +130,10 @@
   line-height: 100%;
 
   margin-bottom: 0;
+
+  @include vp-1199 {}
+
+  @include vp-767 {}
 }
 
 .promo__title--main span {
@@ -136,7 +165,12 @@
 }
 
 .promo__img {
-  width: 50%;
+  width: 100%;
+}
+
+.promo__img img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .promo__desc p {
