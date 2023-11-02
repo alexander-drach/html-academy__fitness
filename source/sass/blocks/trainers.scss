@@ -1,11 +1,84 @@
 .trainers {
+  padding-top: 106px;
+  padding-bottom: 140px;
+}
 
+.trainers .swiper-button-prev {
+  left: -62px;
+}
+
+.trainers .swiper-button-next {
+  right: -62px;
+}
+
+.trainers h2 {
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.trainers h3 {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.trainers__item {
+  color: $color-default-white;
+}
+
+.trainers__type {
+  text-align: center;
+  color: #B6BDCC;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.trainers__desc li {
+  position: relative;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  padding-left: 16px;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 6px;
+    height: 7px;
+
+    background-color: $color-default-white;
+
+    border-radius: 50%;
+  }
 }
 
 .trainers__inner {
   position: relative;
 }
 
-.trainers__item {
-  background-color: lightgray;
+.trainers__preview {
+  position: relative;
+}
+
+.trainers__detail {
+  background-color: rgba(16, 38, 84, 0.89);
+
+  padding: 58px 40px 57px 57px;
 }

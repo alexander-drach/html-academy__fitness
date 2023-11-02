@@ -11,6 +11,10 @@ const slider = () => {
     },
 
     breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
       768: {
         slidesPerView: 2,
         spaceBetween: 30,
@@ -24,7 +28,7 @@ const slider = () => {
 
   const swiperReviews = new Swiper('.reviews__slider', {
     direction: 'horizontal',
-    loop: true,
+    loop: false,
 
     navigation: {
       nextEl: '.swiper-button-next',
