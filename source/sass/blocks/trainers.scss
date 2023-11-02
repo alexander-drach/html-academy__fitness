@@ -3,17 +3,45 @@
   padding-bottom: 140px;
 }
 
+.trainers__inner {
+  @include vp-1199 {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  @include vp-767 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 .trainers .swiper-button-prev {
   left: -62px;
+
+  @include vp-1199 {
+    left: 0;
+  }
+
+  @include vp-767 {}
 }
 
 .trainers .swiper-button-next {
   right: -62px;
+
+  @include vp-1199 {
+    right: 0;
+  }
+
+  @include vp-767 {}
 }
 
 .trainers h2 {
   margin-top: 0;
   margin-bottom: 48px;
+
+  @include vp-1199 {
+    text-align: center;
+  }
 }
 
 .trainers h3 {

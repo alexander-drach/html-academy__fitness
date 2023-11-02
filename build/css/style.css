@@ -2850,17 +2850,43 @@ button,
   padding-bottom: 140px;
 }
 
+@media (max-width: 1199px) {
+  .trainers__inner {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers__inner {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 .trainers .swiper-button-prev {
   left: -62px;
 }
-
+@media (max-width: 1199px) {
+  .trainers .swiper-button-prev {
+    left: 0;
+  }
+}
 .trainers .swiper-button-next {
   right: -62px;
 }
-
+@media (max-width: 1199px) {
+  .trainers .swiper-button-next {
+    right: 0;
+  }
+}
 .trainers h2 {
   margin-top: 0;
   margin-bottom: 48px;
+}
+@media (max-width: 1199px) {
+  .trainers h2 {
+    text-align: center;
+  }
 }
 
 .trainers h3 {
