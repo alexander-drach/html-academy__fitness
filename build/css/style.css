@@ -3320,6 +3320,21 @@ button,
   padding-left: calc((100vw - 1160px) / 2);
   padding-right: 170px;
 }
+@media (max-width: 1366px) {
+  .contact-form {
+    padding-left: 103px;
+  }
+}
+@media (max-width: 1199px) {
+  .contact-form {
+    padding: 0 45px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-form {
+    padding: 0 15px;
+  }
+}
 
 .contact-form__btn {
   width: 100%;
@@ -3339,6 +3354,21 @@ button,
   padding-left: 124px;
   padding-right: calc((100vw - 1160px) / 2);
   border-top: 1px solid #74819c;
+}
+@media (max-width: 1366px) {
+  .contact {
+    padding-right: 103px;
+  }
+}
+@media (max-width: 1199px) {
+  .contact {
+    padding: 0 45px;
+  }
+}
+@media (max-width: 767px) {
+  .contact {
+    padding: 0 15px;
+  }
 }
 
 .contact h3 {

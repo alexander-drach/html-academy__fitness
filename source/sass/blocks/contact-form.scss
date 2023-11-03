@@ -6,6 +6,18 @@
   padding-bottom: 70px;
   padding-left: calc((100vw - 1160px) / 2);
   padding-right: 170px;
+
+  @include vp-1366 {
+    padding-left: 103px;
+  }
+
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
 }
 
 .contact-form__btn {
