@@ -1,0 +1,28 @@
+.contact {
+  padding-top: 56px;
+  padding-bottom: 70px;
+  padding-left: 124px;
+  padding-right: calc((100vw - 1160px) / 2);
+
+  border-top: 1px solid #74819c;
+}
+
+.contact h3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.contact__item {}
+
+.contact__text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152.344%;
+}
+
+.contact__link {
+  color: $color-primary-black;
+}

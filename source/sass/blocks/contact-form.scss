@@ -1,0 +1,24 @@
+.contact-form {
+  color: $color-default-white;
+  background-color: $color-primary-black;
+
+  padding-top: 56px;
+  padding-bottom: 70px;
+  padding-left: calc((100vw - 1160px) / 2);
+  padding-right: 170px;
+}
+
+.contact-form__btn {
+  width: 100%;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+
+  border: 3px solid $color-default-white;
+
+  padding-top: 21px;
+  padding-bottom: 21px;
+}

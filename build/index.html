@@ -657,8 +657,76 @@
             <!---->
           </div><!-- reviews__inner -->
         </div><!--container -->
-      </section>
+      </section><!-- reviews -->
+
+      <div class="group group--section">
+        <section class="section contact-form">
+          <div class="contact-form__inner">
+            <h2>Бесплатное занятие </h2>
+            <div class="form" data-form-validate data-callback="base" data-parent-validate="base">
+
+              <form method="post" action="https://echo.htmlacademy.ru" name="contactform">
+                <div class="group group--form">
+                  <div class="custom-input" data-validate-type="text" data-limitation="name" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
+                    <label class="visually-hidden" for="name">Имя</label>
+                    <input id="name" name="name" type="text" placeholder="Имя" minlength="2" required>
+                  </div>
+
+                  <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
+                    <label class="visually-hidden" for="tel">Телефон</label>
+                    <input id="tel" name="tel" type="tel" placeholder="Телефон" required>
+                  </div>
+                </div><!-- group--form -->
+
+                <button class="btn contact-form__btn" type="submit">Отправить</button>
+              </form>
+
+            </div>
+          </div>
+        </section>
+        <section class="section contact">
+          <div class="contact__inner">
+            <h2>Контакты</h2>
+            <div class="group group--contact">
+              <div class="group__col">
+                <div class="contact__item">
+                  <h3>Адрес:</h3>
+                  <div class="contact__text">
+                    <p>г. Омск, ул. 60 лет Октября, 7</p>
+                  </div>
+                </div>
+                <div class="contact__item">
+                  <h3>График работы:</h3>
+                  <div class="contact__text">
+                    <p>Пн-Вс: с 8:00 до 22:00</p>
+                  </div>
+                </div>
+              </div><!--group__col -->
+
+              <div class="group__col">
+                <div class="contact__item">
+                  <h3>Телефон:</h3>
+                  <div class="contact__text">
+                    <p>
+                      <a class="conact__link" href="tel:88005555555">8-800-555-55-55</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="contact__item">
+                  <h3>Email:</h3>
+                  <div class="contact__text">
+                    <p>
+                      <a class="contact__link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                    </p>
+                  </div>
+                </div>
+              </div><!--group__col -->
+            </div><!-- group--contact -->
+          </div>
+        </section>
+      </div>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">

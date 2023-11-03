@@ -1,0 +1,27 @@
+.group {
+  display: grid;
+}
+
+.group--section {
+  grid-template-columns: 50% 50%;
+}
+
+.group__col {
+
+}
+
+.group--contact {
+  grid-template-columns: 65% 1fr;
+}
+
+.group--contact .group__col:first-child {
+  padding-right: 60px;
+  margin-right: 60px;
+  border-right: 1px solid #74819C;
+}
+
+.group--form {
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
