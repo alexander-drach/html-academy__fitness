@@ -1,12 +1,34 @@
 .main-menu {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+    display: block;
+    column-count: 2;
+  }
 }
 
 .main-menu__item {
   margin-right: 40px;
 
+  &:first-child {
+    @include vp-767 {
+      margin-top: 34px;
+    }
+  }
+
   &:last-child {
+    margin-right: 0;
+  }
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
     margin-right: 0;
   }
 }

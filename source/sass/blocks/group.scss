@@ -4,6 +4,14 @@
 
 .group--section {
   grid-template-columns: 50% 50%;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .group__col {
@@ -12,16 +20,30 @@
 
 .group--contact {
   grid-template-columns: 65% 1fr;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .group--contact .group__col:first-child {
   padding-right: 60px;
   margin-right: 60px;
   border-right: 1px solid #74819C;
+
+  @include vp-767 {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+  }
 }
 
 .group--form {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 30px;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }

@@ -5,6 +5,15 @@
 }
 
 .footer__inner {
-  display: flex;
-  align-items: center;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 100px 1fr 120px;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
