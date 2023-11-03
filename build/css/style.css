@@ -2990,7 +2990,6 @@ button,
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   gap: 0 10px;
-  grid-auto-flow: dense;
 }
 @media (max-width: 1199px) {
   .features__list {

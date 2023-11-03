@@ -28,7 +28,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0 10px;
-  grid-auto-flow: dense;
 
   @include vp-1199 {
     padding-left: 0;
