@@ -1581,6 +1581,21 @@ button,
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
+.custom-input input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.custom-input input::-moz-placeholder {
+  color: #ffffff;
+}
+.custom-input input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.custom-input input::-ms-input-placeholder {
+  color: #ffffff;
+}
+.custom-input input::placeholder {
+  color: #ffffff;
+}
 .custom-input input:hover {
   border-bottom: 1px solid #444a57;
 }
@@ -1608,23 +1623,24 @@ button,
 }
 .custom-input.is-invalid input,
 .custom-input.is-invalid textarea {
-  border: 2px solid #ff1553;
+  border-bottom: 2px solid #ff1553;
 }
 .custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
 .custom-input.is-invalid textarea:focus,
 .custom-input.is-invalid textarea:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
+  border-bottom: 2px solid rgba(255, 21, 83, 0.5);
 }
 .custom-input.is-valid input {
-  border: 2px solid #22b259;
+  border-bottom: 2px solid #22b259;
 }
 .custom-input.is-valid input:focus, .custom-input.is-valid input:hover {
-  border: 2px solid rgba(34, 178, 89, 0.5);
+  border-bottom: 2px solid rgba(34, 178, 89, 0.5);
 }
 .custom-input .input-message {
+  font-size: 10px;
   position: absolute;
   right: 0;
-  bottom: -5px;
+  bottom: -18px;
 }
 .custom-input .input-message.is-invalid {
   color: #ff0000;
