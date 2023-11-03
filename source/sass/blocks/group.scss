@@ -19,7 +19,7 @@
 }
 
 .group--contact {
-  grid-template-columns: 65% 1fr;
+  grid-template-columns: 64% 1fr;
 
   @include vp-767 {
     grid-template-columns: 1fr;
@@ -29,6 +29,7 @@
 .group--contact .group__col:first-child {
   padding-right: 60px;
   margin-right: 60px;
+  padding-left: 1px;
   border-right: 1px solid #74819C;
 
   @include vp-767 {
@@ -41,7 +42,7 @@
 .group--form {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   @include vp-767 {
     grid-template-columns: 1fr;

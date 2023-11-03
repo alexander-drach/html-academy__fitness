@@ -34,7 +34,7 @@
   align-items: flex-start;
   color: $color-blue;
 
-  padding: 19px 30px 27px 30px;
+  padding: 22px 30px 27px 28px;
 
   border: 7px solid $color-red;
   border-image: linear-gradient(to left top, #00359f, #d10a42);
@@ -55,7 +55,7 @@
   font-weight: 700;
   line-height: 150%;
 
-  margin-bottom: 3px;
+  margin-bottom: 0;
 }
 
 .promo__desc {
@@ -115,12 +115,12 @@
 
   color: $color-default-white;
 
-  padding: 43px 44px 44px 47px;
+  padding: 46px 44px 45px 46px;
   background-color: $color-red;
 }
 
 .promo__title--main {
-  margin-bottom: 18px;
+  margin-bottom: 11px;
 }
 
 .promo__title--main h3 {
@@ -144,7 +144,7 @@
   font-weight: 700;
   line-height: 100%;
 
-  margin-top: 3px;
+  margin-top: 6px;
 }
 
 .promo__item--main .promo__desc {
