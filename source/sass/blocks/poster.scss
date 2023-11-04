@@ -10,6 +10,7 @@
 
   @include vp-767 {
     padding-top: 70px;
+    padding-bottom: 38px;
   }
 }
 
@@ -30,7 +31,7 @@
 
   @include vp-767 {
     width: 100%;
-    padding: 85px 77px 86px 77px;
+    padding: 49px 44px 50px 44px;
   }
 }
 
@@ -78,7 +79,7 @@
     font-size: 12px;
     line-height: 100%;
 
-    margin-bottom: 2px;
+    margin-bottom: 4px;
   }
 
   @include vp-767 {}
@@ -101,7 +102,7 @@
     margin-bottom: 16px;
 
     @include vp-1199 {
-      margin-bottom: 9px;
+      margin-bottom: 7px;
     }
 
     @include vp-767 {}

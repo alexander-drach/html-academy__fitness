@@ -7,11 +7,12 @@
     padding-bottom: 99px;
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    padding-bottom: 70px;
+  }
 }
 
 .reviews__slider-button-prev {
-  top: 44%;
   left: 16px;
 
   @include vp-1199 {
@@ -20,11 +21,13 @@
 
   @include vp-767 {
     left: -1px;
+    top: 45%;
+    width: 10px;
+    height: 19px;
   }
 }
 
 .reviews__slider-button-next {
-  top: 44%;
   right: 16px;
 
   @include vp-1199 {
@@ -33,6 +36,9 @@
 
   @include vp-767 {
     right: -1px;
+    top: 45%;
+    width: 10px;
+    height: 19px;
   }
 }
 
@@ -52,8 +58,8 @@
   }
 
   @include vp-767 {
-    // padding-left: 41px;
-    // padding-right: 41px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -67,8 +73,7 @@
   }
 
   @include vp-767 {
-    // padding-left: 41px;
-    // padding-right: 41px;
+    margin-bottom: 42px;
   }
 }
 
@@ -80,6 +85,13 @@
 
   margin-top: -8px;
   margin-bottom: 12px;
+
+  @include vp-767 {
+   padding-left: 100px;
+   line-height: 130%;
+
+   margin-bottom: 23px;
+  }
 }
 
 .reviews p {
@@ -91,6 +103,8 @@
 }
 
 .reviews__item {
+  position: relative;
+
   display: flex;
 
   height: auto;
@@ -107,8 +121,10 @@
   }
 
   @include vp-767 {
-    padding-left: 41px;
-    padding-right: 41px;
+    padding-top: 56px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 32px;
   }
 }
 
@@ -118,6 +134,15 @@
   height: 80px;
 
   margin-right: 28px;
+
+  @include vp-767 {
+    position: absolute;
+    left: 41px;
+    top: 40px;
+    width: 68px;
+    height: 68px;
+    margin-right: 0;
+  }
 }
 
 .reviews__icon img {
@@ -133,4 +158,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+
+  @include vp-767 {
+    text-align: center;
+  }
 }
