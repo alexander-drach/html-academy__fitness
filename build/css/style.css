@@ -1762,6 +1762,12 @@ button,
   margin-left: 1px;
   margin-top: 10px;
 }
+@media (max-width: 1199px) {
+  .logo--footer {
+    width: 80px;
+    margin-top: -1px;
+  }
+}
 @media (max-width: 767px) {
   .logo--footer {
     position: absolute;
@@ -2656,7 +2662,7 @@ button,
 }
 @media (max-width: 1199px) {
   .poster__content {
-    padding: 47px 45px 86px 45px;
+    padding: 51px 45px 45px 45px;
   }
 }
 @media (max-width: 767px) {
@@ -2677,6 +2683,7 @@ button,
   .poster__grid {
     -ms-grid-columns: 117px 1fr;
     grid-template-columns: 117px 1fr;
+    margin-bottom: 6px;
   }
 }
 .poster h2 {
@@ -2708,7 +2715,7 @@ button,
   .poster h3 {
     font-size: 12px;
     line-height: 100%;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
   }
 }
 .poster__date {
@@ -2717,7 +2724,7 @@ button,
 }
 @media (max-width: 1199px) {
   .poster__date {
-    margin-top: 0;
+    margin-top: 1px;
     margin-left: 29px;
   }
 }
@@ -2726,7 +2733,7 @@ button,
 }
 @media (max-width: 1199px) {
   .poster__item-date:first-child {
-    margin-bottom: 0;
+    margin-bottom: 9px;
   }
 }
 .poster time {
@@ -2748,7 +2755,7 @@ button,
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%;
+    line-height: 100%;
     padding-top: 0;
   }
 }
@@ -2772,6 +2779,19 @@ button,
 .poster__month {
   margin-bottom: -2px;
 }
+@media (max-width: 1199px) {
+  .poster__month {
+    margin-bottom: -3px;
+    margin-left: 4px;
+    margin-top: 1px;
+  }
+}
+@media (max-width: 1199px) {
+  .poster__year {
+    margin-left: 4px;
+  }
+}
+
 .poster__desc {
   font-size: 18px;
   font-style: normal;
@@ -2785,6 +2805,7 @@ button,
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    margin-bottom: 30px;
   }
 }
 .poster__desc p {
@@ -2796,6 +2817,15 @@ button,
   border: 4px solid #ffffff;
   padding-top: 21px;
   padding-bottom: 19px;
+}
+@media (max-width: 1199px) {
+  .poster__btn {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    border: 2px solid #ffffff;
+    padding-top: 8px;
+    padding-bottom: 5px;
+  }
 }
 .poster__img {
   width: 57%;
@@ -2822,7 +2852,11 @@ button,
   padding-top: 55px;
   padding-bottom: 139px;
 }
-
+@media (max-width: 1199px) {
+  .trainers {
+    padding-top: 50px;
+  }
+}
 @media (max-width: 1199px) {
   .trainers__inner {
     padding-left: 56px;
@@ -2861,6 +2895,12 @@ button,
 @media (max-width: 1199px) {
   .trainers h2 {
     text-align: center;
+    margin-bottom: 31px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers h2 {
+    margin-bottom: 31px;
   }
 }
 
@@ -2927,7 +2967,11 @@ button,
   -o-object-fit: cover;
      object-fit: cover;
 }
-
+@media (max-width: 1199px) {
+  .trainers__preview img {
+    max-height: 294px;
+  }
+}
 .trainers__preview h3 {
   width: 100%;
   position: absolute;
@@ -3190,7 +3234,11 @@ button,
   margin-top: 0;
   margin-bottom: 34px;
 }
-
+@media (max-width: 1199px) {
+  .promo h2 {
+    margin-bottom: 39px;
+  }
+}
 .promo h3 {
   margin-top: 0;
 }
@@ -3236,6 +3284,8 @@ button,
 @media (max-width: 1199px) {
   .promo__item {
     grid-row-start: span 1;
+    padding: 17px 30px 29px 28px;
+    min-height: 211px;
   }
 }
 @media (max-width: 767px) {
@@ -3251,7 +3301,11 @@ button,
   line-height: 150%;
   margin-bottom: 0;
 }
-
+@media (max-width: 1199px) {
+  .promo__item h3 {
+    margin-bottom: 4px;
+  }
+}
 .promo__desc {
   font-size: 16px;
   font-style: normal;
@@ -3320,7 +3374,11 @@ button,
   padding: 46px 44px 45px 46px;
   background-color: #ed0233;
 }
-
+@media (max-width: 1199px) {
+  .promo__text {
+    padding: 46px 44px 47px 45px;
+  }
+}
 .promo__title--main {
   margin-bottom: 11px;
 }
@@ -3378,14 +3436,40 @@ button,
   padding-top: 58px;
   padding-bottom: 120px;
 }
+@media (max-width: 1199px) {
+  .reviews {
+    padding-top: 30px;
+    padding-bottom: 99px;
+  }
+}
 .reviews__slider-button-prev {
   top: 44%;
   left: 16px;
+}
+@media (max-width: 1199px) {
+  .reviews__slider-button-prev {
+    left: -1px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__slider-button-prev {
+    left: -1px;
+  }
 }
 
 .reviews__slider-button-next {
   top: 44%;
   right: 16px;
+}
+@media (max-width: 1199px) {
+  .reviews__slider-button-next {
+    right: -1px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__slider-button-next {
+    right: -1px;
+  }
 }
 
 .reviews__inner {
@@ -3396,12 +3480,22 @@ button,
   padding-left: 72px;
   padding-right: 72px;
 }
+@media (max-width: 1199px) {
+  .reviews__inner {
+    padding-left: 57px;
+    padding-right: 56px;
+  }
+}
 .reviews h2 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 37px;
 }
-
+@media (max-width: 1199px) {
+  .reviews h2 {
+    margin-bottom: 40px;
+  }
+}
 .reviews h3 {
   font-size: 20px;
   font-style: normal;
@@ -3430,8 +3524,8 @@ button,
 @media (max-width: 1199px) {
   .reviews__item {
     max-width: 100%;
-    padding-left: 72px;
-    padding-right: 72px;
+    padding-left: 63px;
+    padding-right: 63px;
   }
 }
 @media (max-width: 767px) {
@@ -3494,6 +3588,12 @@ button,
   padding-left: 7px;
   margin-top: -2px;
 }
+@media (max-width: 1199px) {
+  .nav {
+    padding-left: 15px;
+    margin-top: 2px;
+  }
+}
 @media (max-width: 767px) {
   .nav {
     margin-left: 0;
@@ -3517,6 +3617,11 @@ button,
   margin-top: -3px;
   margin-right: 1px;
 }
+@media (max-width: 1199px) {
+  .social {
+    margin-top: 5px;
+  }
+}
 @media (max-width: 767px) {
   .social {
     padding-left: 0;
@@ -3528,11 +3633,6 @@ button,
   height: 25px;
   margin-right: 11px;
   border-radius: 50%;
-}
-@media (max-width: 1023px) {
-  .social__item {
-    margin-right: 22px;
-  }
 }
 .social__item:last-child {
   margin-right: 0;
@@ -3568,6 +3668,12 @@ button,
   -ms-grid-columns: 64% 1fr;
   grid-template-columns: 64% 1fr;
 }
+@media (max-width: 1199px) {
+  .group--contact {
+    -ms-grid-columns: 53.5% 1fr;
+    grid-template-columns: 53.5% 1fr;
+  }
+}
 @media (max-width: 767px) {
   .group--contact {
     -ms-grid-columns: 1fr;
@@ -3581,6 +3687,12 @@ button,
   padding-left: 1px;
   border-right: 1px solid #74819C;
 }
+@media (max-width: 1199px) {
+  .group--contact .group__col:first-child {
+    padding-right: 15px;
+    margin-right: 0;
+  }
+}
 @media (max-width: 767px) {
   .group--contact .group__col:first-child {
     padding-right: 0;
@@ -3589,11 +3701,21 @@ button,
   }
 }
 
+@media (max-width: 1199px) {
+  .group--contact .group__col:last-child {
+    padding-left: 47px;
+  }
+}
 .group--form {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 28px;
+}
+@media (max-width: 1199px) {
+  .group--form {
+    gap: 60px;
+  }
 }
 @media (max-width: 767px) {
   .group--form {
@@ -3632,6 +3754,11 @@ button,
 .main-menu__item:last-child {
   margin-right: 0;
 }
+@media (max-width: 1199px) {
+  .main-menu__item {
+    margin-right: 30px;
+  }
+}
 @media (max-width: 767px) {
   .main-menu__item {
     margin-right: 0;
@@ -3661,7 +3788,7 @@ button,
 }
 @media (max-width: 1199px) {
   .contact-form {
-    padding: 61px 45px 70px 45px;
+    padding: 61px 148px 67px 148px;
   }
 }
 @media (max-width: 767px) {
@@ -3674,7 +3801,11 @@ button,
   font-weight: 800;
   margin-bottom: 31px;
 }
-
+@media (max-width: 1199px) {
+  .contact-form h2 {
+    margin-bottom: 37px;
+  }
+}
 .contact-form__btn {
   width: 100%;
   font-size: 14px;
@@ -3701,7 +3832,7 @@ button,
 }
 @media (max-width: 1199px) {
   .contact {
-    padding: 61px 45px 70px 45px;
+    padding: 61px 148px 64px 148px;
   }
 }
 @media (max-width: 767px) {
@@ -3713,6 +3844,16 @@ button,
 .contact h2 {
   margin-bottom: 37px;
 }
+@media (max-width: 1199px) {
+  .contact h2 {
+    margin-bottom: 33px;
+  }
+}
+@media (max-width: 767px) {
+  .contact h2 {
+    margin-bottom: 20px;
+  }
+}
 
 .contact h3 {
   font-size: 16px;
@@ -3722,18 +3863,39 @@ button,
   margin-top: 0;
   margin-bottom: 3px;
 }
+@media (max-width: 1199px) {
+  .contact h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .contact h3 {
+    padding: 61px 15px 70px 15px;
+  }
+}
 
 .contact__item {
   margin-bottom: 17px;
 }
-
+.contact__item:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1199px) {
+  .contact__item {
+    margin-bottom: 22px;
+  }
+}
 .contact__text {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 152.344%;
 }
-
+@media (max-width: 1199px) {
+  .contact__text {
+    font-size: 18px;
+  }
+}
 .contact__text p {
   margin-top: 0;
 }

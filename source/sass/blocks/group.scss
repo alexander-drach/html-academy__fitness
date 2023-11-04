@@ -21,6 +21,10 @@
 .group--contact {
   grid-template-columns: 64% 1fr;
 
+  @include vp-1199 {
+    grid-template-columns: 53.5% 1fr;
+  }
+
   @include vp-767 {
     grid-template-columns: 1fr;
   }
@@ -32,6 +36,11 @@
   padding-left: 1px;
   border-right: 1px solid #74819C;
 
+  @include vp-1199 {
+    padding-right: 15px;
+    margin-right: 0;
+  }
+
   @include vp-767 {
     padding-right: 0;
     margin-right: 0;
@@ -39,10 +48,23 @@
   }
 }
 
+.group--contact .group__col:last-child {
+  @include vp-1199 {
+    padding-left: 47px;
+  }
+
+  @include vp-767 {
+  }
+}
+
 .group--form {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 28px;
+
+  @include vp-1199 {
+    gap: 60px;
+  }
 
   @include vp-767 {
     grid-template-columns: 1fr;

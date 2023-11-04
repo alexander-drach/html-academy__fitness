@@ -19,6 +19,11 @@
     margin-left: 1px;
     margin-top: 10px;
 
+    @include vp-1199 {
+      width: 80px;
+      margin-top: -1px;
+    }
+
     @include vp-767 {
       position: absolute;
       left: 0;
