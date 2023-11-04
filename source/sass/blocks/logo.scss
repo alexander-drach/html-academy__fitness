@@ -13,7 +13,11 @@
   }
 
   &--footer {
-    padding-right: 15px;
+    width: 88px;
+
+    margin-right: 15px;
+    margin-left: 1px;
+    margin-top: 10px;
 
     @include vp-767 {
       position: absolute;
