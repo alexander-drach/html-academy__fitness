@@ -3059,7 +3059,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 240px 1fr;
   grid-template-columns: 1fr 240px 1fr;
-  gap: 51px 60px;
+  gap: 71px 60px;
 }
 @media (max-width: 1199px) {
   .features__list {
@@ -3115,6 +3115,7 @@ button,
 }
 .features__item:nth-last-child(-n+2) {
   padding-bottom: 0;
+  margin-bottom: -23px;
   border-bottom: 2px solid transparent;
 }
 
@@ -3124,7 +3125,7 @@ button,
   font-weight: 700;
   line-height: 150%;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .features__parametr {
@@ -3153,7 +3154,7 @@ button,
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
-  margin-top: -3px;
+  margin-top: -5px;
 }
 
 .features__desc {
