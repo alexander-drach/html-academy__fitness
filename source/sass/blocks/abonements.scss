@@ -22,8 +22,6 @@
   @include vp-1199 {
     margin-bottom: 20px;
   }
-
-  @include vp-767 {}
 }
 
 .abonements__inner {
@@ -70,7 +68,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  
 
   @include vp-1199 {
     grid-template-columns: repeat(1, 1fr);
@@ -112,7 +109,7 @@
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 110.156%;
+  line-height: 110.16%;
 
   margin-top: 0;
   margin-bottom: 10px;
@@ -124,7 +121,7 @@
 }
 
 .abonements__desc {
-  color: #495A7D;
+  color: #495a7d;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -212,10 +209,8 @@
 }
 
 .abonements__item:hover .abonements__btn {
-  border: 2px solid $color-default-black;
-
   color: $color-default-white;
-  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
 
   border: 2px solid $color-default-white;
 }

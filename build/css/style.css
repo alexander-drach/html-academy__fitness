@@ -1574,7 +1574,7 @@ button,
   color: #ffffff;
   background: none;
   border: none;
-  border-bottom: 1px solid #74819C;
+  border-bottom: 1px solid #74819c;
   outline: none;
   padding-bottom: 5px;
   padding-left: 1px;
@@ -2269,12 +2269,12 @@ button,
   padding: 2px;
   background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(237, 2, 53, 0.2)), to(rgba(0, 61, 183, 0.2)));
   background-image: linear-gradient(to left top, rgba(237, 2, 53, 0.2), rgba(0, 61, 183, 0.2));
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff));
+  -webkit-mask: linear-gradient(#ffffff 0 0) content-box, linear-gradient(#ffffff 0 0);
+          mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff));
+          mask: linear-gradient(#ffffff 0 0) content-box, linear-gradient(#ffffff 0 0);
   -webkit-mask-composite: xor;
-  mask-composite: exclude;
+          mask-composite: exclude;
 }
 @media (max-width: 1199px) {
   .about__btn::after {
@@ -2440,6 +2440,7 @@ button,
     margin-bottom: 20px;
   }
 }
+
 .abonements__inner {
   position: relative;
 }
@@ -2537,7 +2538,7 @@ button,
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 110.156%;
+  line-height: 110.16%;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -2549,7 +2550,7 @@ button,
 }
 
 .abonements__desc {
-  color: #495A7D;
+  color: #495a7d;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2638,9 +2639,8 @@ button,
 }
 
 .abonements__item:hover .abonements__btn {
-  border: 2px solid #000000;
   color: #ffffff;
-  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
   border: 2px solid #ffffff;
 }
 
@@ -2700,6 +2700,7 @@ button,
     margin-bottom: 6px;
   }
 }
+
 .poster h2 {
   text-align: center;
   font-size: 82px;
@@ -2732,6 +2733,7 @@ button,
     margin-bottom: 4px;
   }
 }
+
 .poster__date {
   margin-top: 3px;
   margin-left: 51px;
@@ -2742,6 +2744,7 @@ button,
     margin-left: 29px;
   }
 }
+
 .poster__item-date:first-child {
   margin-bottom: 16px;
 }
@@ -2750,7 +2753,8 @@ button,
     margin-bottom: 7px;
   }
 }
-.poster time {
+
+.poster .poster__time {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2765,7 +2769,7 @@ button,
   border-top: 1px solid #ffffff;
 }
 @media (max-width: 1199px) {
-  .poster time {
+  .poster .poster__time {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -2773,6 +2777,7 @@ button,
     padding-top: 0;
   }
 }
+
 .poster__month,
 .poster__year {
   font-size: 14px;
@@ -2790,6 +2795,7 @@ button,
     line-height: 150%;
   }
 }
+
 .poster__month {
   margin-bottom: -2px;
 }
@@ -2800,6 +2806,7 @@ button,
     margin-top: 1px;
   }
 }
+
 @media (max-width: 1199px) {
   .poster__year {
     margin-left: 4px;
@@ -2822,6 +2829,7 @@ button,
     margin-bottom: 30px;
   }
 }
+
 .poster__desc p {
   margin: 0;
 }
@@ -2841,6 +2849,7 @@ button,
     padding-bottom: 5px;
   }
 }
+
 .poster__img {
   width: 57%;
 }
@@ -2879,6 +2888,9 @@ button,
   }
 }
 
+.trainers__inner {
+  position: relative;
+}
 @media (max-width: 1199px) {
   .trainers__inner {
     padding-left: 56px;
@@ -2900,6 +2912,7 @@ button,
     left: 0;
   }
 }
+
 .trainers__slider-button-next {
   right: -56px;
 }
@@ -2908,6 +2921,7 @@ button,
     right: 0;
   }
 }
+
 .trainers h2 {
   margin-top: 0;
   margin-bottom: 48px;
@@ -2940,7 +2954,7 @@ button,
 
 .trainers__type {
   text-align: center;
-  color: #B6BDCC;
+  color: #b6bdcc;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2977,10 +2991,6 @@ button,
   height: 7px;
   background-color: #ffffff;
   border-radius: 50%;
-}
-
-.trainers__inner {
-  position: relative;
 }
 
 .trainers__preview {
@@ -3084,6 +3094,7 @@ button,
     margin-bottom: 16px;
   }
 }
+
 .features__list {
   display: -ms-grid;
   display: grid;
@@ -3197,9 +3208,9 @@ button,
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
-  background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
-  background-clip: text;
+  background: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 1199px) {
@@ -3207,9 +3218,10 @@ button,
     font-size: 58px;
   }
 }
+
 .features__parametr > span {
   display: block;
-  color: #2E35AC;
+  color: #2e35ac;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -3221,6 +3233,7 @@ button,
     margin-top: -2px;
   }
 }
+
 .features__desc {
   font-size: 16px;
   font-style: normal;
@@ -3289,8 +3302,8 @@ button,
 
 .features__item--center .features__value {
   background: linear-gradient(128deg, #ffffff 0%, #ffffff 45.58%);
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 1199px) {
@@ -3301,6 +3314,7 @@ button,
     line-height: 70px;
   }
 }
+
 .features__item--center .features__parametr > span {
   color: #ffffff;
   font-size: 26px;
@@ -3335,6 +3349,7 @@ button,
     margin-right: auto;
   }
 }
+
 .promo {
   padding-top: 100px;
   padding-bottom: 60px;
@@ -3533,6 +3548,7 @@ button,
   line-height: 100%;
   margin-bottom: 0;
 }
+
 .promo__title--main span {
   display: block;
   font-size: 70px;
@@ -3759,7 +3775,7 @@ button,
 .footer {
   padding-top: 41px;
   padding-bottom: 42px;
-  background-color: #030A1A;
+  background-color: #030a1a;
 }
 @media (max-width: 767px) {
   .footer {
@@ -3889,7 +3905,7 @@ button,
   padding-right: 60px;
   margin-right: 60px;
   padding-left: 1px;
-  border-right: 1px solid #74819C;
+  border-right: 1px solid #74819c;
 }
 @media (max-width: 1199px) {
   .group--contact .group__col:first-child {
@@ -4119,17 +4135,19 @@ button,
     margin-bottom: 22px;
   }
 }
+
 .contact__text {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 152.344%;
+  line-height: 152.34%;
 }
 @media (max-width: 1199px) {
   .contact__text {
     font-size: 18px;
   }
 }
+
 .contact__text p {
   margin-top: 0;
 }

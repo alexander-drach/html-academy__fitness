@@ -259,8 +259,6 @@
       width: 52px;
       height: 52px;
     }
-
-    @include vp-767 {}
   }
 
   &::after {
@@ -268,21 +266,14 @@
     height: 100px;
     padding: 2px;
 
-    background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(237, 2, 53, 0.2)), to(rgba(0, 61, 183, 0.2)));
     background-image: linear-gradient(to left top, rgba(237, 2, 53, 0.2), rgba(0, 61, 183, 0.2));
-    -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
+    mask: linear-gradient(#ffffff 0 0) content-box, linear-gradient(#ffffff 0 0);
     mask-composite: exclude;
 
     @include vp-1199 {
       width: 73px;
       height: 73px;
     }
-
-    @include vp-767 {}
   }
 
   &:hover,

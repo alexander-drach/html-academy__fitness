@@ -44,8 +44,6 @@
     grid-template-columns: 117px 1fr;
     margin-bottom: 6px;
   }
-
-  @include vp-767 {}
 }
 
 .poster h2 {
@@ -81,8 +79,6 @@
 
     margin-bottom: 4px;
   }
-
-  @include vp-767 {}
 }
 
 .poster__date {
@@ -93,8 +89,6 @@
     margin-top: 1px;
     margin-left: 29px;
   }
-
-  @include vp-767 {}
 }
 
 .poster__item-date {
@@ -104,12 +98,10 @@
     @include vp-1199 {
       margin-bottom: 7px;
     }
-
-    @include vp-767 {}
   }
 }
 
-.poster time {
+.poster .poster__time {
   display: inline-flex;
   align-items: center;
   font-size: 40px;
@@ -128,8 +120,6 @@
 
     padding-top: 0;
   }
-
-  @include vp-767 {}
 }
 
 .poster__month,
@@ -147,8 +137,6 @@
     font-weight: 400;
     line-height: 150%;
   }
-
-  @include vp-767 {}
 }
 
 .poster__month {
@@ -159,8 +147,6 @@
     margin-left: 4px;
     margin-top: 1px;
   }
-
-  @include vp-767 {}
 }
 
 .poster__year {
@@ -185,8 +171,6 @@
 
     margin-bottom: 30px;
   }
-
-  @include vp-767 {}
 }
 
 .poster__desc p {
@@ -209,14 +193,10 @@
     padding-top: 8px;
     padding-bottom: 5px;
   }
-
-  @include vp-767 {}
 }
 
 .poster__img {
   width: 57%;
-
-  @include vp-1199 {}
 
   @include vp-767 {
     width: 100%;

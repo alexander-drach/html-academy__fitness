@@ -14,10 +14,6 @@
   }
 }
 
-.group__col {
-
-}
-
 .group--contact {
   grid-template-columns: 64% 1fr;
 
@@ -34,7 +30,7 @@
   padding-right: 60px;
   margin-right: 60px;
   padding-left: 1px;
-  border-right: 1px solid #74819C;
+  border-right: 1px solid #74819c;
 
   @include vp-1199 {
     padding-right: 15px;

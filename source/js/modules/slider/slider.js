@@ -21,11 +21,9 @@ const slider = () => {
       1200: {
         slidesPerView: 4,
         spaceBetween: 40,
-      }
-    }
+      },
+    },
   });
-
-  console.log(swiperTrainers)
 
   const swiperReviews = new Swiper('.reviews__slider', {
     direction: 'horizontal',
@@ -35,8 +33,6 @@ const slider = () => {
       prevEl: '.reviews__slider-button-prev',
     },
   });
-
-  console.log(swiperReviews)
 };
 
 export {slider};
