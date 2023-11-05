@@ -177,3 +177,9 @@
   z-index: 2;
   opacity: 1;
 }
+
+.trainers__item.active .trainers__detail {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+}
