@@ -172,7 +172,8 @@
   margin-bottom: 33px;
 }
 
-.trainers__item:hover .trainers__detail {
+.trainers__item:hover .trainers__detail,
+.trainers__item:focus .trainers__detail {
   position: absolute;
   z-index: 2;
   opacity: 1;

@@ -1,6 +1,4 @@
-import { swiper } from '../../vendor/swiper';
-
-const slider = () => {
+export const slider = () => {
   const swiperTrainers = new Swiper('.trainers__slider', {
     direction: 'horizontal',
     loop: true,
@@ -9,6 +7,10 @@ const slider = () => {
       nextEl: '.trainers__slider-button-next',
       prevEl: '.trainers__slider-button-prev',
     },
+
+    watchSlidesProgress: true,
+    slideVisibleClass: 'slider__slide--visible',
+    simulateTouch: false,
 
     breakpoints: {
       320: {
@@ -34,17 +36,17 @@ const slider = () => {
     },
   });
 
-  if (window.matchMedia("(max-width: 1200px)").matches) {
+  if (window.matchMedia('(max-width: 1200px)').matches) {
     if (document.querySelectorAll('.trainers__item').length > 0) {
       const trainers = document.querySelectorAll('.trainers__item');
 
       trainers.forEach(item => {
         item.addEventListener('click', () => {
           item.classList.toggle('active');
-        })
-      })
+        });
+      });
     }
   }
-};
 
-export {slider};
+  return {swiperTrainers, swiperReviews};
+};

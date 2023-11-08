@@ -389,6 +389,7 @@ template {
   max-height: none;
 }
 
+/* stylelint-disable */
 /**
  * Swiper 8.4.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -2224,6 +2225,15 @@ button,
 }
 
 .about__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -3045,7 +3055,8 @@ button,
   margin-bottom: 33px;
 }
 
-.trainers__item:hover .trainers__detail {
+.trainers__item:hover .trainers__detail,
+.trainers__item:focus .trainers__detail {
   position: absolute;
   z-index: 2;
   opacity: 1;
@@ -3749,10 +3760,15 @@ button,
   .reviews__icon {
     position: absolute;
     left: 41px;
-    top: 40px;
+    top: 25px;
     width: 68px;
     height: 68px;
     margin-right: 0;
+  }
+}
+@media (max-width: 374px) {
+  .reviews__icon {
+    top: 40px;
   }
 }
 

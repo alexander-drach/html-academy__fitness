@@ -4,20 +4,22 @@ const playVideo = () => {
   const firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-  let player = document.querySelector('.about__video');
-  let link = document.querySelector('.about__btn');
+  if (document.querySelector('.about__video') && document.querySelector('.about__btn')) {
+    let player = document.querySelector('.about__video');
+    let link = document.querySelector('.about__btn');
 
-  link.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    player.classList.add('is-show');
-    new YT.Player(player, {
-      videoId: '9TZXsZItgdw',
-      events: {
-        onReady: (e) => e.target.playVideo(),
-      },
+    link.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      player.classList.add('is-show');
+      new YT.Player(player, {
+        videoId: '9TZXsZItgdw',
+        events: {
+          onReady: (e) => e.target.playVideo(),
+        },
+      });
+      evt.stopPropagation();
     });
-    evt.stopPropagation();
-  });
+  }
 };
 
 export {playVideo};
