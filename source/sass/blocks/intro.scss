@@ -2,73 +2,69 @@
   color: $color-default-white;
   background: conic-gradient(from 130.31deg at calc(50% - 460px) 257px, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
-  padding-bottom: 42px;
+  padding-bottom: 52px;
 
   @include vp-1199 {
-    padding-bottom: 50px;
+    padding-bottom: 84px;
     background: conic-gradient(from 130.31deg at calc(50% - 222px) 201px, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   @include vp-767 {
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     background: conic-gradient(from 130.31deg at calc(50% - 49px) 169px, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 }
 
 .intro__inner {
   display: grid;
-  grid-template-rows: 156px 1fr 143px;
-  grid-template-columns: 133px 246px 1fr;
-  grid-template-areas:
-    "intro-desc city img"
-    "intro-desc title img"
-    "intro-desc btn img";
-  gap: 10px 16px;
+  grid-template-columns: 34% 1fr;
+  align-items: end;
+  justify-content: end;
+  gap: 66px;
 
   @include vp-1199 {
-    grid-template-rows: 104px 1fr 143px;
-    grid-template-columns: 113px 196px 1fr;
-    padding-left: 0;
+    grid-template-columns: 48% 1fr;
+    gap: 16px;
   }
 
-  @include vp-767 {
-    grid-template-rows: 95px 1fr 143px;
+  @include vp-767 {}
+}
+
+.intro__content {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  grid-template-rows: max-content max-content max-content;
+  align-items: end;
+  justify-content: end;
+
+  padding-bottom: 42px;
+
+  @include vp-1199 {
     grid-template-columns: 113px 1fr;
-    grid-template-areas:
-      "city city"
-      "intro-desc title"
-      "btn btn";
+    padding-bottom: 22px;
   }
+
+  @include vp-767 {}
 }
 
 .intro__desc {
-  grid-area: intro-desc;
-
-  padding-left: 0;
-  margin: 0;
-
-  list-style-type: none;
+  grid-row: 1/-1;
   text-align: right;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
 
-  margin-top: 293px;
+  margin-bottom: 83px;
 
   @include vp-1199 {
-    margin-top: 206px;
+    margin-bottom: 56px;
   }
 
-  @include vp-767 {
-    margin-top: 87px;
-  }
+  @include vp-767 {}
 }
 
 .intro span {
-  grid-area: city;
-  align-self: end;
-
   display: block;
 
   font-family: $ff-alumisans;
@@ -81,13 +77,14 @@
   text-align: right;
 
   margin-right: 49px;
+  margin-bottom: 14px;
 
   @include vp-1199 {
     font-size: 34px;
     letter-spacing: 1.02px;
 
-    margin-bottom: -5px;
-    margin-right: 4px;
+    margin-bottom: 7px;
+    margin-right: 5px;
   }
 
   @include vp-767 {
@@ -97,8 +94,6 @@
 }
 
 .intro h1 {
-  grid-area: title;
-
   font-family: $ff-alumisans;
   text-align: right;
   font-size: 92px;
@@ -109,42 +104,41 @@
   text-transform: uppercase;
   -webkit-text-stroke-width: 5px;
 
-  padding-top: 5px;
-  margin-bottom: 7px;
+  margin-bottom: 47px;
 
   @include vp-1199 {
     font-size: 72px;
     letter-spacing: 3.6px;
     text-transform: none;
     -webkit-text-stroke-width: 4px;
-
-    padding-top: 1px;
-    margin-bottom: 0;
+    margin-bottom: 36px;
   }
 
-  @include vp-767 {
-    padding-top: 9px;
-    margin-left: -26px;
-  }
+  @include vp-767 {}
+}
+
+.intro__wrapper-btn {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 1/-1;
 }
 
 .intro__btn {
-  grid-area: btn;
-  align-self: end;
+  width: 100%;
+  max-width: 234px;
 
   border: 4px solid $color-default-white;
   padding: 15px 25px 14px 25px;
 
-  margin-left: 14px;
   margin-right: -2px;
-  margin-bottom: 53px;
 
   @include vp-1199 {
-    margin-left: 10px;
-    margin-bottom: 55px;
+    max-width: 188px;
   }
 
   @include vp-767 {
+    max-width: 100%;
+
     margin-left: 0;
     margin-bottom: 70px;
     width: 100%;
@@ -152,9 +146,6 @@
 }
 
 .intro__img {
-  grid-area: img;
-
-  margin-left: 50px;
   margin-top: -13px;
 
   @include vp-1199 {
