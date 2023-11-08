@@ -1,5 +1,5 @@
 export const slider = () => {
-  const swiperTrainers = new Swiper('.trainers__slider', {
+  const swiperTrainers = new window.Swiper('.trainers__slider', {
     direction: 'horizontal',
     loop: true,
 
@@ -27,7 +27,7 @@ export const slider = () => {
     },
   });
 
-  const swiperReviews = new Swiper('.reviews__slider', {
+  const swiperReviews = new window.Swiper('.reviews__slider', {
     direction: 'horizontal',
 
     navigation: {
@@ -40,7 +40,7 @@ export const slider = () => {
     if (document.querySelectorAll('.trainers__item').length > 0) {
       const trainers = document.querySelectorAll('.trainers__item');
 
-      trainers.forEach(item => {
+      trainers.forEach((item) => {
         item.addEventListener('click', () => {
           item.classList.toggle('active');
         });
