@@ -10,10 +10,9 @@
 }
 
 .footer__inner {
-  position: relative;
-
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 95px 1fr auto;
+  gap: 20px;
 
   @include vp-767 {
     display: block;

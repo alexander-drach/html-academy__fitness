@@ -1771,10 +1771,6 @@ button,
 @media (max-width: 767px) {
   .logo--footer {
     width: 67px;
-    position: absolute;
-    left: 0;
-    top: 5px;
-    margin: 0;
   }
 }
 
@@ -3807,13 +3803,11 @@ button,
 }
 
 .footer__inner {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 95px 1fr auto;
+  grid-template-columns: 95px 1fr auto;
+  gap: 20px;
 }
 @media (max-width: 767px) {
   .footer__inner {
@@ -3824,13 +3818,13 @@ button,
 .nav {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 7px;
-  margin-top: -2px;
+  padding-left: 16px;
+  margin-top: 1px;
 }
 @media (max-width: 1199px) {
   .nav {
-    padding-left: 15px;
-    margin-top: 2px;
+    padding-left: 16px;
+    margin-top: px;
   }
 }
 @media (max-width: 767px) {
