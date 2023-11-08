@@ -2690,6 +2690,9 @@ button,
 @media (max-width: 1199px) {
   .poster__content {
     padding: 51px 45px 45px 45px;
+    -ms-grid-columns: 117px 1fr;
+    grid-template-columns: 117px 1fr;
+    gap: 0 29px;
   }
 }
 @media (max-width: 767px) {
@@ -2702,11 +2705,23 @@ button,
 .poster__content dl {
   margin: 5px 0 0 0;
 }
+@media (max-width: 1199px) {
+  .poster__content dl {
+    margin: 1px 0 0 0;
+  }
+}
 
 .poster__content dt {
   padding-bottom: 8px;
   font-size: 18px;
   line-height: 24px;
+}
+@media (max-width: 1199px) {
+  .poster__content dt {
+    font-size: 12px;
+    line-height: 100%;
+    padding-bottom: 2px;
+  }
 }
 
 .poster__content dd {
@@ -2719,8 +2734,21 @@ button,
   line-height: 47px;
   border-top: 1px solid #ffffff;
 }
+@media (max-width: 1199px) {
+  .poster__content dd {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+}
 .poster__content dd:not(:last-child) {
   margin-bottom: 16px;
+}
+@media (max-width: 1199px) {
+  .poster__content dd:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .poster__content span {
@@ -2730,6 +2758,16 @@ button,
   font-size: 14px;
   line-height: 16px;
   margin-left: -3px;
+}
+@media (max-width: 1199px) {
+  .poster__content span {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 6px;
+    margin-left: -2px;
+  }
 }
 
 .poster h2 {
@@ -2747,6 +2785,7 @@ button,
   .poster h2 {
     font-size: 48px;
     letter-spacing: 1.44px;
+    margin-left: 2px;
   }
 }
 
@@ -2765,6 +2804,7 @@ button,
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    margin-top: 9px;
     margin-bottom: 30px;
   }
 }
