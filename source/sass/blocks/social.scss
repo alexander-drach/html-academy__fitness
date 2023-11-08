@@ -15,6 +15,9 @@
 
   @include vp-767 {
     padding-left: 0;
+    margin-top: 16px;
+
+    column-span: all;
   }
 }
 
