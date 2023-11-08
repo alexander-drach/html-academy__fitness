@@ -3783,6 +3783,13 @@ button,
   grid-template-columns: 95px 1fr auto;
   gap: 20px;
 }
+@media (max-width: 1199px) {
+  .footer__inner {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media (max-width: 767px) {
   .footer__inner {
     display: block;
