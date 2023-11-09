@@ -31,6 +31,10 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &:nth-child(n + 4) {
+    margin-top: 10px;
+  }
 }
 
 .social__item:hover {

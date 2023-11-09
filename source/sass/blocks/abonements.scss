@@ -91,6 +91,10 @@
 
   border: 7px solid transparent;
 
+  @include vp-1279 {
+    padding: 55px 30px 61px 30px;
+  }
+
   @include vp-1199 {
     padding: 55px 110px 61px 110px;
   }

@@ -70,6 +70,10 @@
     font-size: 16px;
     padding: 0 0 15px 0;
   }
+
+  @include hover-focus {
+    color: #102654;
+  }
 }
 
 .tabs__control.is-active {

@@ -30,11 +30,15 @@
 
   padding: 85px 77px 80px 77px;
 
+  @include vp-1279 {
+    padding: 51px 35px 45px 35px;
+    gap: 0 29px;
+  }
+
   @include vp-1199 {
     padding: 51px 45px 45px 45px;
 
     grid-template-columns: 117px 1fr;
-    gap: 0 29px;
   }
 
   @include vp-767 {
