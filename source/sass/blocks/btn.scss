@@ -20,4 +20,8 @@
 
     pointer-events: none;
   }
+
+  @include hover-focus {
+    color: rgb(51, 51, 248);
+  }
 }

@@ -40,6 +40,10 @@ body {
 a {
   color: $color-default-black;
   text-decoration: none;
+
+  @include hover-focus {
+    color: rgb(51, 51, 248);
+  }
 }
 
 img,
