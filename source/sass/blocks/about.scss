@@ -106,7 +106,7 @@
 
   @include vp-767 {
     max-width: none;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
   }
 }
 
@@ -146,7 +146,14 @@
 }
 
 .about__img {
+  @include vp-1199 {
+    display: flex;
+    justify-content: center;
+  }
+
   @include vp-767 {
+    display: block;
+
     margin-left: -15px;
     margin-right: -15px;
     margin-bottom: 40px;
@@ -155,8 +162,12 @@
 
 .about__img img {
   @include vp-1199 {
-    width: 100%;
+    width: auto;
     object-fit: cover;
+  }
+
+  @include vp-767 {
+    width: 100%;
   }
 }
 
